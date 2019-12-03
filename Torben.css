@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css?family=Nobile:400,700&display=swap");
+body {
+  margin: 0;
+  height: 100vh;
+  background: #191919;
+  font-family: 'Nobile';
+}
+
+*,
+*:before,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  padding: 1em;
+  height: 100vh;
+}
+
+.container:first-child {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 30% auto;
+      grid-template-rows: 10% 30% auto;
+}
+
+.container h1 {
+  text-align: center;
+  margin-top: 10%;
+  font-size: 2em;
+  font-weight: normal;
+  color: #ffeded;
+  z-index: 1;
+  text-shadow: 2px 2px #747474;
+}
+
+.container p {
+  line-height: 1.5em;
+  color: #c2c2c2;
+}
+
+.container .line {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  width: 50%;
+  border-right: 1px solid white;
+  height: 50%;
+  margin-bottom: 9em;
+  position: relative;
+}
+
+.container .line::after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  border-style: solid;
+  border-width: 11px 11px 0px 11px;
+  border-color: white transparent transparent transparent;
+  right: -.7em;
+  bottom: -2px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  color: black;
+  font-weight: bold;
+  font-size: .8em;
+  text-decoration: none;
+}
+
+h2 {
+  color: white;
+  font-weight: normal;
+  font-size: 3em;
+  margin: 0;
+}
+
+.subtext {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+
+.secondary {
+  margin-top: -10em;
+}
+
+.ocean,
+.hafen {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.ocean {
+  top: 0;
+  z-index: -2;
+}
+
+.hafen {
+  top: 25%;
+}
+
+@media only screen and (min-width: 665px) {
+  .ocean {
+    top: -35%;
+    z-index: -2;
+  }
+  .hafen {
+    top: 10%;
+  }
+}
+
+@media only screen and (min-width: 930px) {
+  .oceans {
+    top: -40%;
+    z-index: -2;
+  }
+  .hafen {
+    top: 10%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .oceans {
+    top: -50%;
+    z-index: -2;
+  }
+  .hafen {
+    top: 5%;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 2em;
+    color: white;
+  }
+  .menu {
+    width: 20px;
+    height: 20px;
+  }
+}
+/*# sourceMappingURL=Torben.css.map */
